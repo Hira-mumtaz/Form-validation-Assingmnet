@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register New Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="submainbox">
+            <div class="leftbox">
+                <form id="myform" action="subbmit.html" method="get">
+                    <div class="headingData">WELCOME</div>
+                    <div class="subHeading">Register New Account</div>
+                    <div class="radiobutton">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female" checked> Female</label>
+                    </div>
+                    <div class="nameData">
+                        <div>
+                            <label for="name">Name</label><br>
+                            <input type="Text" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="errormessage">
+                            <p id="nameerror"></p>
+                        </div>
+                    </div>
+
+                    <div class="emailData">
+                        <div>
+                            <label for="email">E-mail</label><br>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="errormessage">
+                            <p id="emailerror"></p>
+                        </div>
+                    </div>
+
+                    <div class="address">
+                        <div id="countryData">
+                            <div>
+                                <label for="country">country</label><br>
+                                <input type="text" id="country" placeholder="Enter country name">
+                            </div>
+                            <div class="errormessage">
+                                <p id="countryerror"></p>
+                            </div>
+                        </div>
+
+                        <div id="cityData">
+                            <div>
+                                <label for="city">city</label><br>
+                                <input type="text" id="city" placeholder="Enter city name">
+                            </div>
+                            <div class="errormessage">
+                                <p id="cityerror"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phoneData">
+                        <div>
+                            <label for="phoneNumber">Phone Number</label><br>
+                            <input type="tel" id="phoneNumber" placeholder="Enter your email" pattern="[0-9]{11}">
+                        </div>
+                        <div class="errormessage">
+                            <p id="phoneNumbererror"></p>
+                        </div>
+                    </div>
+
+                    <div class="buttonData">
+                        <div>
+                            <button type="submit" class="subbmit" >Get Started</button>
+                    
+                        </div>
+                        <div class="privacy">
+    <label>
+        <input type="checkbox" id="privacyCheck">
+        I agree with the privacy policy
+    </label>
+</div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="rightbox">
+                <img src="right.png">
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
